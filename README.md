@@ -25,9 +25,9 @@ conda env create -n meteonet-xai -f environment.yml
 
 Executing the notebooks in the following order will download the meteonet data from source and will lead until the model training, evalutaion and appling XAI approaches. Non of the datasets/intermediate data are added to the repo due to storage issues.
 
-1. 1_download_raw_data.ipynb:   Download the data from original sources and writes them to `raw_data`
-2. 2_create_input_target_sequences.ipynb:   Reads data from `raw_data` and writes to `processed_data` folder 
-3. 3_save_normalized_data.ipynb:    Reads data from `processed_data` and writes to `processed_normalized_data` folder
-4. 4_train_test_n_xai.ipynb:    Reads data from `processed_normalized_data` and generates the final results
+1. *1_download_raw_data.ipynb*:   Download the data from original sources and writes them to `raw_data`
+2. *2_create_input_target_sequences.ipynb*:   Reads data from `raw_data` and writes to `processed_data` folder 
+3. *3_save_normalized_data.ipynb*:    Reads data from `processed_data` and writes to `processed_normalized_data` folder
+4. *4_train_test_n_xai.ipynb*:    Reads data from `processed_normalized_data` and generates the final results
 
 Running them inorder will Download the necessary data for the next step. But If needed to skip any step and move to the following one, Can download the data manually into the respective input folder and proceed.
